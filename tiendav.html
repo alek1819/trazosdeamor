@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trazos de Amor y del Alma | Velas y Cerámicas</title>
+    <style>
+        /* Estilos Generales y Tipografía */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            color: #445d48;
+            background-color: #f7faf7;
+            /* Fondo de plantas en líneas delgadas (SVG) */
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 20c0 0 5 10 15 10s15-10 15-10-5 10-15 10-15-10-15-10zM70 60c0 0 5 10 15 10s15-10 15-10-5 10-15 10-15-10-15-10z' stroke='%23a8cdad' stroke-width='0.5' fill='none'/%3E%3C/svg%3E");
+        }
+
+        header {
+            background-color: rgba(212, 231, 212, 0.8);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 2px solid #a8cdad;
+            backdrop-filter: blur(5px);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* Misión y Visión con interactividad */
+        .info-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .card-info {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #d4e7d4;
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        .card-info:hover {
+            box-shadow: 0 10px 20px rgba(168, 205, 173, 0.3);
+            transform: translateY(-10px);
+        }
+
+        /* Catálogo */
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #e0eee0;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .producto:hover {
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .producto:hover img {
+            transform: scale(1.1);
+        }
+
+        .producto-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .precio {
+            font-size: 1.3rem;
+            color: #5a875e;
+            display: block;
+            margin: 10px 0;
+            font-style: italic;
+        }
+
+        /* Botón de WhatsApp Flotante */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #a8cdad;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            font-weight: bold;
+            font-size: 0.8rem;
+            z-index: 1000;
+        }
+
+        .btn-comprar {
+            background-color: #d4e7d4;
+            color: #445d48;
+            border: 1px solid #a8cdad;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Times New Roman', serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn-comprar:hover {
+            background-color: #a8cdad;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/3136307444" class="whatsapp-btn" target="_blank">Chat</a>
+
+    <header>
+        <h1>Trazos de Amor y del Alma</h1>
+        <p>Arte hecho a mano para conectar con tu esencia</p>
+    </header>
+
+    <section>
+        <div class="info-container">
+            <div class="card-info">
+                <h2>Nuestra Misión</h2>
+                <p>Creamos piezas únicas que iluminan espacios y corazones, fomentando la creatividad a través del arte de la cerámica y el bienestar de las velas aromáticas.</p>
+            </div>
+            <div class="card-info">
+                <h2>Nuestra Visión</h2>
+                <p>Ser el refugio creativo favorito de Colombia, donde cada persona encuentre un kit o un accesorio que le permita expresar su amor y su alma.</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; font-size: 2.5rem; margin-top: 60px;">Nuestro Catálogo</h2>
+        <div class="catalogo">
+            
+            <div class="producto">
+                <img src="velita.jpg" alt="Velas Aromáticas">
+                <div class="producto-info">
+                    <h3>Vela Aromática Artesanal</h3>
+                    <p>Cera de soja con fragancias naturales de lavanda o vainilla.</p>
+                    <span class="precio">$25.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="pintura.jpg" alt="Kit de Cerámica">
+                <div class="producto-info">
+                    <h3>Kit "Pinta tu Alma"</h3>
+                    <p>Incluye cerámica, 3 pinturas, pincel y guía de trazos.</p>
+                    <span class="precio">$45.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="ceramica.jpg" alt="Cerámica sola">
+                <div class="producto-info">
+                    <h3>Pieza de Cerámica</h3>
+                    <p>Cerámica blanca lista para decorar o usar como decoración.</p>
+                    <span class="precio">$18.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="pulseras.jpg" alt="Accesorios">
+                <div class="producto-info">
+                    <h3>Accesorio Personalizado</h3>
+                    <p>Pulseras o cuarzos según tu historia personal.</p>
+                    <span class="precio">$15.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+ 
+            <div class="producto">
+                <img src="figuras.jpg" alt="kit figuritas para pintar">
+                <div class="producto-info">
+                    <h3>kit de figuritas</h3>
+                    <p>8 figuritas de ceramica con sus pinturas y pinceles.</p>
+                    <span class="precio">$50.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+
+ <div class="producto">
+                <img src="jabones.jpg" alt="Jabones">
+                <div class="producto-info">
+                    <h3>Jabones artesanales</h3>
+                    <p>Jabones tamaño mediano</p>
+                    <span class="precio">$15.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+ <div class="producto">
+                <img src="kitvela.jpg" alt="kit velas">
+                <div class="producto-info">
+                    <h3>kit arma tu vela</h3>
+                    <p>Cera para velas de soya, flores secas decorativas, pabilo, esencia, y 2 frascos</p>
+                    <span class="precio">$30.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+ 
+ <div class="producto">
+                <img src="pulsera.jpg" descargas">
+                <div class="producto-info">
+                    <h3>kit Pulsera de cuarzos</h3>
+                    <p>Pulsera con 7 cuarzos</p>
+                    <span class="precio">$20.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+ 
+ <div class="producto">
+                <img src="shampo.jpg" descargas">
+                <div class="producto-info">
+                    <h3>Shampoo en barra</h3>
+                    <p>Shampoo en barra perfecto para masajear el cuero cabelludo mentras lavas tu cabello</p>
+                    <span class="precio">$25.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+ <div class="producto">
+                <img src="limpieza.jpg" descargas">
+                <div class="producto-info">
+                    <h3>Kit de limpieza espiritual</h3>
+                    <p>Incluye todo lo perfecto para una limpieza espiritual</p>
+                    <span class="precio">$30.000 COP</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+ 
+ <div class="producto">
+                <img src="navidadv.jpg" descargas">
+                <div class="producto-info">
+                    <h3>Sed velas navideñas</h3>
+                    <p>10 velas navideas persoalizadas a tu gusto</p>
+                    <span class="precio">$37.000 COP </span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+ <div class="producto">
+                <img src="navidadc.jpg" descargas">
+                <div class="producto-info">
+                    <h3>Ceramicas navideñas para pintar</h3>
+                    <p>Ceramicas de figuras navideñas: incluye 1 ceramica con pinturas y pinceles</p>
+                    <span class="precio">$20.000 COP C/U</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+
+
+<div class="producto">
+                <img src="jabonesv.jpg" descargas">
+                <div class="producto-info">
+                    <h3>Jabones con tematica navideña</h3>
+                    <p>Jabones con tematica navideña</p>
+                    <span class="precio">$15.000 COP C/U</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+
+<div class="producto">
+                <img src="collarr.jpg" descargas">
+                <div class="producto-info">
+                    <h3>Collares personalizados</h3>
+                    <p>Personaliza tus collares con colores y dijes que te representen; incluye 5 collares totalmente personalizados con materiales 100% garantizados para ti</p>
+                    <span class="precio">$30.000 COP C/U</span>
+                    <button class="btn-comprar">Pedir ahora</button>
+                </div>
+            </div>
+<footer style="text-align: center; padding: 40px; color: #a8cdad;">
+    <hr style="border: 0; border-top: 1px solid #d4e7d4; width: 50%; margin: 20px auto;">
+    
+    <img src="logo.jpg" alt="Logo" style="display: block; margin: 0 auto 20px auto; width: 100px; height: auto;">
+    
+    <p style="font-style: italic; font-size: 1.2rem; margin-bottom: 10px; color: #5a875e;">Amor en cada trabajo</p>
+    <p>Trazos de Amor y del Alma &copy; 2025 - Colombia</p>
+</footer>
+
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: #a8cdad;">
+        <hr style="border: 0; border-top: 1px solid #d4e7d4; width: 50%; margin: 20px auto;">
+        <p>Trazos de Amor y del Alma &copy; 2025 - Colombia</p>
+    </footer>
+
+</body>
+</html>
